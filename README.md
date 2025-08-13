@@ -1,6 +1,8 @@
+# deprecated - as it has been fixed in latest nunchaku version (see https://github.com/nunchaku-tech/ComfyUI-nunchaku/issues/406#event-19127712520 )
+---
 based on: https://huggingface.co/lym00/comfyui_nunchaku_lora_patch/blob/main/patch_comfyui_nunchaku_lora.py
 
-# Universal LoRA Final Layer `adaLN` Patcher
+## Universal LoRA Final Layer `adaLN` Patcher
 
 This script patches `.safetensors` LoRA models that are missing `adaLN` (Adaptive Layer Normalization) weights in their final layer. This is a common issue with some LoRA models that can cause compatibility problems with certain loaders, such as the Nunchaku LoRA loader in ComfyUI, which expect these weights to be present.
 
